@@ -238,14 +238,14 @@ body {
   right: 12px;
   background-color: #EFF2FB;
   border: none;
-  box-shadow: 0px 20px 20px rgba(217, 61, 89, 0.2);
+  box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
   cursor: pointer;
   transition: 0.2s linear;
 }
 .recent-post .intro-big-rp .big-post .post-xl .xl-post-info .read-post:hover {
   color: white;
   background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%);
-  box-shadow: 0px 20px 20px rgba(217, 61, 89, 0.2);
+  box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
 }
 .recent-post .intro-big-rp .small-post {
   flex-basis: calc(100% - 963px);
@@ -285,9 +285,9 @@ body {
   border-radius: 20px;
   width: 307px;
   height: 50px;
-  margin: 20px auto 0;
+  margin: 20px 0 0 auto;
   background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%);
-  box-shadow: 0px 20px 20px rgba(217, 61, 89, 0.2);
+  box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
   font-family: "League Spartan", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
