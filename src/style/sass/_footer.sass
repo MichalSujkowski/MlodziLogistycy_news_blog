@@ -71,13 +71,16 @@
       font-size: 20px
       margin-bottom: 10px
 
-    ul
-      list-style: none
+    .social-icons
       display: flex
-      justify-content: center
-      align-items: center
+      flex-direction: row
+      gap: 20px
 
-      li
+      .social-icon
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
         width: 70px
         height: 70px
         border-radius: 50%
@@ -87,13 +90,14 @@
         margin: 10px 20px
         position: relative
         cursor: pointer
+        transition: .4s linear
+        border: none
+        color: #555555
 
-        a
-          color: #555555
-          position: absolute
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%)
+        &:hover
+          color: #fff
+          background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%)
+          box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2)
 
   .copyright
     width: 100%
