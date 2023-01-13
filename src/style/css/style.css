@@ -33,7 +33,7 @@ body {
   margin: 5px 0;
 }
 .navigation .contact-nav .about-us-nav, .navigation .contact-nav .contact-nav-mail {
-  font-size: 10px;
+  font-size: 12px;
   color: #555555;
   text-transform: lowercase;
 }
@@ -246,6 +246,7 @@ body {
   color: white;
   background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%);
   box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
+  transform: scale(1.1);
 }
 .recent-post .intro-big-rp .small-post {
   flex-basis: calc(100% - 963px);
@@ -253,7 +254,6 @@ body {
   justify-content: flex-start;
   align-content: center;
   flex-direction: column;
-  overflow: hidden;
   margin-top: 10px;
 }
 .recent-post .intro-big-rp .small-post .post-xs {
@@ -283,9 +283,9 @@ body {
 .recent-post .intro-big-rp .small-post .view-all {
   border: none;
   border-radius: 20px;
-  width: 307px;
+  width: 297px;
   height: 50px;
-  margin: 20px 0 0 auto;
+  margin: 20px 8px 0 auto;
   background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%);
   box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
   font-family: "League Spartan", sans-serif;
@@ -293,6 +293,10 @@ body {
   text-transform: uppercase;
   color: white;
   cursor: pointer;
+  transition: 0.4s ease-in;
+}
+.recent-post .intro-big-rp .small-post .view-all:hover {
+  transform: scale(1.05);
 }
 
 .subscribes-input {
@@ -406,13 +410,16 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.footer .social-footer ul {
+.footer .social-footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer .social-footer .social-icons .social-icon {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer .social-footer ul li {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -422,13 +429,14 @@ body {
   margin: 10px 20px;
   position: relative;
   cursor: pointer;
-}
-.footer .social-footer ul li a {
+  transition: 0.4s linear;
+  border: none;
   color: #555555;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.footer .social-footer .social-icons .social-icon:hover {
+  color: #fff;
+  background: linear-gradient(92.19deg, #D93D59 0%, #E87373 100%);
+  box-shadow: 0 20px 20px rgba(217, 61, 89, 0.2);
 }
 .footer .copyright {
   width: 100%;
