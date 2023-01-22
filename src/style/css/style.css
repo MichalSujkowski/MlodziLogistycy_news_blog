@@ -65,7 +65,9 @@ body {
 .navigation .logo-header .logo {
   width: 375px;
   height: 100%;
-  border: 1px solid red;
+}
+.navigation .logo-header .logo .company-logo {
+  width: 375px;
 }
 .navigation .logo-header .menu {
   width: 100%;
@@ -336,6 +338,103 @@ body {
   text-transform: uppercase;
   color: white;
   cursor: pointer;
+}
+
+.events {
+  width: 1320px;
+  height: 516px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 40px 0;
+}
+.events .title-section {
+  width: 1320px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.events .title-section .title {
+  flex-grow: 0;
+  font-size: 48px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  padding-right: 25px;
+}
+.events .title-section .breakpoint {
+  flex-grow: 6;
+  height: 5px;
+  background-image: url("/src/img/bottom-border-nav.png");
+  background-repeat: repeat-y;
+  margin-bottom: 5px;
+}
+.events .title-section .view-all-small {
+  font-family: "Jost", sans-serif;
+  width: 120px;
+  line-height: 30px;
+  color: #555;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: 0.3s linear;
+}
+.events .title-section .view-all-small:hover {
+  transform: scale(1.1);
+}
+.events .events-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.events .events-post .event-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 420px;
+  height: 422px;
+}
+.events .events-post .event-intro .event-img {
+  width: 420px;
+  height: 220px;
+}
+.events .events-post .event-intro .event-title {
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.events .events-post .event-intro .event-date-author {
+  font-size: 14px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+.events .events-post .event-intro .read-more {
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  width: 120px;
+  line-height: 50px;
+  color: #000;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s linear;
+  text-align: left;
+}
+.events .events-post .event-intro .read-more:hover {
+  transform: scale(1.1);
 }
 
 .footer {
